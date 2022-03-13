@@ -3,7 +3,8 @@ Implementation of the "SIFT and SURF based feature extraction for the anomaly de
 
 
 Download the dataset at: https://www.kaggle.com/imonbilk/industry-biscuit-cookie-dataset
-Download the Matlab SVDD code from: https://www.mathworks.com/matlabcentral/fileexchange/69296-support-vector-data-description-svdd
+
+Download the Matlab SVDD code from: https://www.mathworks.com/matlabcentral/fileexchange/69296-support-vector-data-description-svdd and copy the Svdd folder to your working directory.
 
 
 Please cite the following authors in your work:
