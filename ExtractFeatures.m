@@ -215,4 +215,79 @@ xlabel('Samples')
 ylabel('Score')
 title('Semi-supervised SVDD SURF')
 
-sgtitle('SVM classification scores') 
+sgtitle('SVM classification scores')
+
+%% Get the ROC curves
+
+% SVDD
+figure(3)
+
+subplot(2, 2, 1)
+[X, Y, ~, AUC] = perfcurve(labels_testNum, results_SIFT_OCC.predictedLabel, 1);
+plot(X, Y)
+axis([0 1 0 1])
+xlabel('True positive rate')
+ylabel('False positive rate')
+title(['OC-SVDD SIFT, AUC: ', num2str(AUC)])
+
+subplot(2, 2, 2)
+[X, Y, ~, AUC] = perfcurve(labels_testNum, results_SURF_OCC.predictedLabel, 1);
+plot(X, Y)
+axis([0 1 0 1])
+xlabel('True positive rate')
+ylabel('False positive rate')
+title(['OC-SVDD SURF, AUC: ', num2str(AUC)])
+
+subplot(2, 2, 3)
+[X, Y, ~, AUC] = perfcurve(labels_testNum, results_SIFT_Semi.predictedLabel, 1);
+plot(X, Y)
+axis([0 1 0 1])
+xlabel('True positive rate')
+ylabel('False positive rate')
+title(['Semi-supervised SVDD SIFT, AUC: ', num2str(AUC)])
+
+subplot(2, 2, 4)
+[X, Y, ~, AUC] = perfcurve(labels_testNum, results_SURF_Semi.predictedLabel, 1);
+plot(X, Y)
+axis([0 1 0 1])
+xlabel('True positive rate')
+ylabel('False positive rate')
+title(['Semi-supervised SVDD SURF, AUC: ', num2str(AUC)])
+
+sgtitle('SVDD ROC curves and AUCs')
+
+figure(4)
+
+subplot(2, 2, 1)
+[X, Y, ~, AUC] = perfcurve(labels_testNum, score1, 1);
+plot(X, Y)
+axis([0 1 0 1])
+xlabel('True positive rate')
+ylabel('False positive rate')
+title(['OC-SVM SIFT, AUC: ', num2str(AUC)])
+
+subplot(2, 2, 2)
+[X, Y, ~, AUC] = perfcurve(labels_testNum, score2, 1);
+plot(X, Y)
+axis([0 1 0 1])
+xlabel('True positive rate')
+ylabel('False positive rate')
+title(['OC-SVM SURF, AUC: ', num2str(AUC)])
+
+subplot(2, 2, 3)
+[X, Y, ~, AUC] = perfcurve(labels_testNum, score3, 1);
+plot(X, Y)
+axis([0 1 0 1])
+xlabel('True positive rate')
+ylabel('False positive rate')
+title(['Semi-supervised SVM SIFT, AUC: ', num2str(AUC)])
+
+subplot(2, 2, 4)
+[X, Y, ~, AUC] = perfcurve(labels_testNum, score4, 1);
+plot(X, Y)
+axis([0 1 0 1])
+xlabel('True positive rate')
+ylabel('False positive rate')
+title(['Semi-supervised SVM SURF, AUC: ', num2str(AUC)])
+
+sgtitle('SVM ROC curves and AUCs')
