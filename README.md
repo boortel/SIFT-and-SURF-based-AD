@@ -29,5 +29,14 @@ Please cite the following authors in your work:
 ```
 
 ```
-Kepeng Qiu (2022). Support Vector Data Description (SVDD) (https://github.com/iqiukp/SVDD-MATLAB/releases/tag/v2.1.5), GitHub. Retrieved March 13, 2022. 
+@misc{Qiu2022,
+  author = {Kepeng Qiu},
+  journal = {GitHub},
+  title = {Support Vector Data Description (SVDD)},
+  subtitle = {MATLAB code for abnormal detection using Support Vector Data Description (SVDD)},
+  year = {2022},
+  medium = {online},
+  accessed = {2022-10-11},
+  URL = {https://github.com/iqiukp/SVDD-MATLAB/releases/tag/v2.1.5},
+}
 ```
