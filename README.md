@@ -4,11 +4,30 @@ Implementation of the "SIFT and SURF based feature extraction for the anomaly de
 
 Download the dataset at: https://www.kaggle.com/imonbilk/industry-biscuit-cookie-dataset
 
+**EDIT:** New version of the dataset with the cropped images and simplified annotations is available as *Version 2*. Please use the script 
+*DatasetFolder.py* attached to the dataset when using the updated version and the script in this repository for *Version 1*.
+
 Download the Matlab SVDD code from: https://www.mathworks.com/matlabcentral/fileexchange/69296-support-vector-data-description-svdd and copy the Svdd folder to your working directory.
 
 
 Please cite the following authors in your work:
 
-BILÍK, Š. SIFT and SURF based feature extraction for the anomaly detection. In Proceedings of the 28th Conference STUDENT EEICT 2022. Brno: Vysoké učení Technické, Fakulta elektrotechniky a komunikačních technologií, 2022
+```
+@inproceedings{BUT177722,
+  author="Šimon {Bilík} and Karel {Horák}",
+  title="SIFT and SURF based feature extraction for the anomaly detection",
+  address="Brno University of Technology, Faculty of Electrical Engineering",
+  booktitle="Proceedings I of the 28 th Conference STUDENT EEICT 2022",
+  chapter="177722",
+  howpublished="online",
+  institution="Brno University of Technology, Faculty of Electrical Engineering",
+  year="2022",
+  month="april",
+  pages="459--464",
+  publisher="Brno University of Technology, Faculty of Electrical Engineering"
+}
+```
 
+```
 Kepeng Qiu (2022). Support Vector Data Description (SVDD) (https://github.com/iqiukp/SVDD-MATLAB/releases/tag/v2.1.5), GitHub. Retrieved March 13, 2022. 
+```
