@@ -1,3 +1,5 @@
+**Warning:** This repository is outdated and it won't be maintained in future. Please refer to the repository https://github.com/boortel/AE-Reconstruction-And-Feature-Based-AD and to the ModelClassificationSIFT.py module for its direct Python reimplemantation. SURF based feature extractor will be added later.
+
 # SIFT-and-SURF-based-AD
 Implementation of the "SIFT and SURF based feature extraction for the anomaly detection" paper
 
